@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/tenDp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/hundrandDp"
+        android:layout_height="@dimen/hundrandDp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/place_holder"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStoreName"
+        android:layout_width="@dimen/zeroDp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/ivIcon"
+        android:layout_marginStart="@dimen/tenDp"
+        android:text="Fairmont Olympic Hotel - Seattle"
+        android:fontFamily="@font/circular_air_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteenSp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRating"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/fiveDp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/ivIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="4"
+        android:textSize="@dimen/fouteenSp"
+        android:paddingTop="@dimen/fiveDp"
+        android:paddingBottom="@dimen/fiveDp"
+        android:paddingRight="@dimen/twelveDp"
+        android:paddingLeft="@dimen/twelveDp"
+        android:background="@drawable/text_background"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvStoreName"
+        android:layout_marginStart="@dimen/threeDp"
+        android:text="Pizza"
+        android:fontFamily="@font/circular_air_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteenSp"
+        app:layout_constraintStart_toStartOf="@+id/tvStoreName"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/fiveDp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvProduct"
+        android:layout_marginStart="@dimen/threeDp"
+        android:text="300"
+        android:fontFamily="@font/circular_air_light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteenSp"
+        app:layout_constraintStart_toStartOf="@+id/tvStoreName"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/fiveDp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCloseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+        android:layout_marginStart="@dimen/threeDp"
+        android:text="300"
+        android:fontFamily="@font/circular_air_light"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sixteenSp"
+        app:layout_constraintStart_toStartOf="@+id/tvStoreName"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/fiveDp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVinicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvCloseTime"
+        android:layout_marginStart="@dimen/threeDp"
+        android:text="300"
+        android:fontFamily="@font/circular_air_light"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sixteenSp"
+        app:layout_constraintStart_toStartOf="@+id/tvStoreName"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        android:layout_marginLeft="@dimen/fiveDp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
